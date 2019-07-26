@@ -31,7 +31,5 @@ class train_gbm:
         conf_matrix = metrics.confusion_matrix(self.Y_test, test_prediction)
         print('Confusion matrix =  \n', conf_matrix)
 
-
-
     def transform(self, X_inference):
         return self.classifier.predict(X_inference)
